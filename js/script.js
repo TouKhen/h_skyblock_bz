@@ -38,6 +38,7 @@ document.querySelector("form").addEventListener('submit', async function (event)
         // Add to graph
         data.datasets[0].data.push(blaze_rods_price);
         data.datasets[1].data.push(ender_pearls_price);
+        data.datasets[2].data.push(Math.round(eye_profit_perc));
 
         console.log(data.datasets[0])
 
@@ -65,6 +66,12 @@ const data = {
     label: 'Enchanted Ender Pearls Price',
     backgroundColor: '#9128f3',
     borderColor: '#9128f3',
+    data: [0],
+  },
+  {
+    label: 'Profit',
+    backgroundColor: '#77f83b',
+    borderColor: '#77f83b',
     data: [0],
   }
   ]
