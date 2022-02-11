@@ -1,0 +1,146 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:not(i) {
+  font-family: "Sora", sans-serif;
+}
+
+.page-wrapper {
+  background-color: #1E1E1E;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  padding: 6rem;
+}
+
+.price h1 {
+  font-size: 3rem;
+  color: #FCFCFC;
+  margin-top: 2rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .bl_rd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form .bl_rd > div {
+  margin: 0 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .bl_rd > div p {
+  color: #ffa600;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+form .bl_rd > div img {
+  width: 20rem;
+}
+
+form .bl_rd > div #blaze_rods_label, form .bl_rd > div #ender_pearls_label {
+  color: #FCFCFC;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+form .bl_rd > div input {
+  margin-top: 2rem;
+  padding: .6rem;
+  width: 25rem;
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  background-color: #FCFCFC;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+form .bl_rd > div button {
+  margin: 0 auto;
+}
+
+form .eyes {
+  color: #FCFCFC;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+form .eyes span {
+  color: #ffa600;
+  font-weight: 600;
+}
+
+form button {
+  color: #1E1E1E;
+  background-color: #ffa600;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  padding: 1rem 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chart-container {
+  padding: 0 5rem 5rem;
+}
+
+footer {
+  background-color: #ffa600;
+  padding: 2rem;
+  color: #1E1E1E;
+}
+
+footer p {
+  font-size: 1.4rem;
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */

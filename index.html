@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypixel Skyblock Bazaar Prices</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="price">
+            <form>
+                <div class="bl_rd">
+                    <div class="blaze">
+                        <p>Blaze Rod</p>
+                        <img src="img/Blaze_Rod_JE1_BE1.png" alt="">
+                        <p id="blaze_rods_label">XX coins</p>
+                        <!-- <input id="blaze_rods" type="number"> -->
+                    </div>
+            
+                    <div class="rods">
+                        <p>Enchanted Ender Pearl</p>
+                        <img src="img/Enchanted_Ender_Pearl.png" alt="">
+                        <p id="ender_pearls_label">XX coins</p>
+                        <!-- <input id="ender_pearls" type="number"> -->
+                    </div>
+                </div>
+
+                <h1>How much profit ?</h1>
+
+                <p class="eyes" id="eyes_price">Craft price per eyes = </p>
+                <p class="eyes" id="eyes_buy">Bazaar eyes buy = </p>
+                <p class="eyes" id="eyes_profit">Profit per eyes = </p>
+        
+                <button type="submit">Update</button>
+            </form>
+        </div>
+        
+
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <footer>
+            <p>Made by @TouKhen</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
