@@ -28,6 +28,7 @@ document.querySelector("form").addEventListener('submit', async function (event)
 
         let eye_profit_perc = (eye_bz_price / Math.round(eye_price)) * 100;
         eye_profit_perc = 100 - eye_profit_perc;
+        eye_profit_val = Math.round(eye_profit_perc);
         
         blaze_rods_label.innerHTML = Math.round(blaze_rods_price) + " coins";
         ender_pearls_label.innerHTML = Math.round(ender_pearls_price) + " coins";
@@ -38,7 +39,7 @@ document.querySelector("form").addEventListener('submit', async function (event)
         // Add to graph
         data.datasets[0].data.push(blaze_rods_price);
         data.datasets[1].data.push(ender_pearls_price);
-        data.datasets[2].data.push(Math.round(eye_profit_perc));
+        data.datasets[2].data.push(eye_profit_val);
 
         console.log(data.datasets[0])
 
