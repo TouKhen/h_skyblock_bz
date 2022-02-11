@@ -59,20 +59,20 @@ const data = {
   labels: labels,
   datasets: [{
     label: 'Blaze Rods Price',
-    backgroundColor: '#ffa600',
-    borderColor: '#ffa600',
+    backgroundColor: 'rgb(255, 166, 0, 0.600)',
+    borderColor: 'rgb(255, 166, 0, 0.600)',
     data: [0],
   },
   {
     label: 'Enchanted Ender Pearls Price',
-    backgroundColor: '#9128f3',
-    borderColor: '#9128f3',
+    backgroundColor: 'rgb(145, 40, 243, 0.600)',
+    borderColor: 'rgb(145, 40, 243, 0.600)',
     data: [0],
   },
   {
     label: 'Profit',
-    backgroundColor: '#77f83b',
-    borderColor: '#77f83b',
+    backgroundColor: 'rgba(119, 248, 59, 0.600)',
+    borderColor: 'rgba(119, 248, 59, 0.600)',
     data: [0],
   }
   ]
