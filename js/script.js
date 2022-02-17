@@ -1,9 +1,9 @@
 // ALl variables
-let blaze_rods_label = document.querySelector("#blaze_rods_label");
-let ender_pearls_label = document.querySelector("#ender_pearls_label");
-let eyes_price = document.querySelector("#eyes_price");
-let eyes_buy = document.querySelector("#eyes_buy");
-let eyes_profit = document.querySelector("#eyes_profit");
+const blaze_rods_label = document.querySelector("#blaze_rods_label");
+const ender_pearls_label = document.querySelector("#ender_pearls_label");
+const eyes_price = document.querySelector("#eyes_price");
+const eyes_buy = document.querySelector("#eyes_buy");
+const eyes_profit = document.querySelector("#eyes_profit");
 
 // Update button
 document.querySelector("form").addEventListener('submit', async function (event){
@@ -15,9 +15,9 @@ document.querySelector("form").addEventListener('submit', async function (event)
         // Items list
         const json = await( await fetch("https://api.hypixel.net/skyblock/bazaar")).json();
 
-        let blaze_rods_price = json["products"]["BLAZE_ROD"]["quick_status"]["buyPrice"];
-        let ender_pearls_price = json["products"]["ENCHANTED_ENDER_PEARL"]["quick_status"]["buyPrice"];
-        let eye_price = json["products"]["ENCHANTED_EYE_OF_ENDER"]["quick_status"]["sellPrice"];
+        const blaze_rods_price = json["products"]["BLAZE_ROD"]["quick_status"]["buyPrice"];
+        const ender_pearls_price = json["products"]["ENCHANTED_ENDER_PEARL"]["quick_status"]["buyPrice"];
+        const eye_price = json["products"]["ENCHANTED_EYE_OF_ENDER"]["quick_status"]["sellPrice"];
         console.log(ender_pearls_price + " " + blaze_rods_price);
 
         console.log(eye_price);
@@ -26,10 +26,12 @@ document.querySelector("form").addEventListener('submit', async function (event)
 
         let eye_profit_val = Math.round(eye_price) - eye_bz_price;
 
+        // Eyes profit
         let eye_profit_perc = (eye_bz_price / Math.round(eye_price)) * 100;
         eye_profit_perc = 100 - eye_profit_perc;
         eye_profit_perc = Math.round(eye_profit_perc);
         
+        // Change values in html
         blaze_rods_label.innerHTML = Math.round(blaze_rods_price) + " coins";
         ender_pearls_label.innerHTML = Math.round(ender_pearls_price) + " coins";
         eyes_price.innerHTML = "Craft price per eyes = <span>" + eye_bz_price + " coins</span>";
